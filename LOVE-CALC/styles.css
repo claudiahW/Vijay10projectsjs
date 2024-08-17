@@ -16,4 +16,18 @@ body {
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ff85c0;
+}
+h2 {
+  color: #ff85c0;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.love-calculator {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
 }
