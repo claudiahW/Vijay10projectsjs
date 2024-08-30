@@ -22,5 +22,10 @@ document.getElementById("bmi-form").addEventListener("submit", function (e) {
     } else {
       category = "Obese";
     }
+
+    let resultMessage = "Your bmi" + bmi.toFixed(2) + "<br>";
+    resultMessage += "Category:" + category;
+
+    resultElement.innerHTML = resultMessage;
   }
 });
