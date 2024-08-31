@@ -1,4 +1,4 @@
-document.getElementById("bmi-form").addEventListener("submit", function (e) {
+document.getElementById("bmi-form").addEventListener("submit", function(e){
   e.preventDefault();
 
   const gender = document.getElementById("gender").value;
@@ -7,8 +7,9 @@ document.getElementById("bmi-form").addEventListener("submit", function (e) {
   const heightInches = parseInt(document.getElementById("height-inches").value);
   const weight = parseFloat(document.getElementById("weight").value);
 
-  if (gender && age && heightFeet && heightInches && weight) {
-    const heightInMeters = (heightFeet * 12 + heightInches) * 0.0254;
+  if (gender && age && heightFeet && heightInches && weight){
+
+    const heightInMeters = ((heightFeet * 12) + heightInches) * 0.0254;
     const bmi = weight / (heightInMeters * heightInMeters);
     const resultElement = document.getElementById("result");
 

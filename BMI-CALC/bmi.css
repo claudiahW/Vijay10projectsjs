@@ -67,5 +67,5 @@ input[type="submit"]:hover {
 #result {
   font-weight: bold;
   margin-top: 20px;
-  column-rule: #3498db;
+  color: #3498db;
 }
