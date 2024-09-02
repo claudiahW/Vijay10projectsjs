@@ -20,8 +20,6 @@ function updateColor() {
   const greenValue = greenSlider.value;
   const blueValue = blueSlider.value;
 
-
-
   const rgbColor = `rgb(${redValue}, ${greenValue},
  ${blueValue})`;
   //   console.log(rgbColor);
@@ -30,9 +28,9 @@ function updateColor() {
   redValueSpan.textContent = redValue;
   greenValueSpan.textContent = greenValue;
   blueValueSpan.textContent = blueValue;
+
+  inputTypeRGBValue.textContent = rgbColor;
 }
 updateColor();
 
-function copyRGBValue(){
-
-}
+function copyRGBValue() {}
