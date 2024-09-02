@@ -21,11 +21,13 @@ function incrementCounter() {
 }
 
 function decrementCounter() {
-  counterValue--;
-  updateCounterDisplay();
+  if (counterValue > 0) {
+    counterValue--;
+    updateCounterDisplay();
+  }
 }
 
 function resetCounter() {
-  counterDisplay = 0;
+  counterValue = 0;
   updateCounterDisplay();
 }
