@@ -9,10 +9,23 @@ document
 document.getElementById("resetBtn").addEventListener("click", resetCounter);
 
 let counterDisplay = document.getElementById("counterDisplay");
-let countervalue = 0;
+let counterValue = 0;
 
-function incrementCounter() {}
+function updateCounterDisplay() {
+  counterDisplay.textContent = counterValue;
+}
 
-function decrementCounter() {}
+function incrementCounter() {
+  counterValue++;
+  updateCounterDisplay();
+}
 
-function resetCounter() {}
+function decrementCounter() {
+  counterValue--;
+  updateCounterDisplay();
+}
+
+function resetCounter() {
+  counterDisplay = 0;
+  updateCounterDisplay();
+}
