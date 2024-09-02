@@ -17,6 +17,9 @@ function palindromeChecker() {
   } else {
     result.textContent = `"${inputText.value}" is Not a palindrome`;
   }
+
+  result.classList.add("fadeIn");
+  inputText.value = "";
 }
 
 document
