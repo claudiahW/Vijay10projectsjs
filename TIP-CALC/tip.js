@@ -25,15 +25,28 @@ function calculateTip() {
       tip = billAmount * 0.05;
       break;
     case 2:
-      tip = billAmount * 0.10;
+      tip = billAmount * 0.1;
       break;
     case 3:
       tip = billAmount * 0.15;
       break;
     case 4:
-      tip = billAmount * 0.20;
+      tip = billAmount * 0.2;
       break;
   }
+
+  let totalAmount = billAmount + tip;
+  let amountPerPerson = totalAmount / splitCount;
+
+  if (mealType === "dinner") {
+    tip += 5;
+    totalAmount += 5;
+    amountPerPerson += 5;
+  }
+
+  tipAmountOutput.textContent = `Tip: $${tip.toFixed(2)}`;
+  totalAmountOutput.textContent = `Total Amount: $${tip.toFixed(2)}`;
+  amountPerPersonOutput.textContent = `Amount per Person: $${tip.toFixed(2)}`;
 }
 
 const calculateBtn = document
