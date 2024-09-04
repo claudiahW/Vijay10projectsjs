@@ -45,8 +45,10 @@ function calculateTip() {
   }
 
   tipAmountOutput.textContent = `Tip: $${tip.toFixed(2)}`;
-  totalAmountOutput.textContent = `Total Amount: $${tip.toFixed(2)}`;
-  amountPerPersonOutput.textContent = `Amount per Person: $${tip.toFixed(2)}`;
+  totalAmountOutput.textContent = `Total Amount: $${totalAmount.toFixed(2)}`;
+  amountPerPersonOutput.textContent = `Amount per Person: $${amountPerPerson.toFixed(
+    2
+  )}`;
 }
 
 const calculateBtn = document
