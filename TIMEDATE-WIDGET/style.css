@@ -56,3 +56,13 @@ body {
     box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff;
   }
 }
+.date-container {
+  padding: 10px;
+  background-color: #2784e0;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.date-container span {
+  font-size: 2.5em;
+}
