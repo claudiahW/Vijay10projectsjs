@@ -54,7 +54,7 @@ function updateClock() {
 
   hoursContainer.textContent = hours + " :";
   minutesContainer.textContent = minutes + ": ";
-  secondsContainer.textContent = seconds + ": ";
+  secondsContainer.textContent = seconds + " ";
 }
 
 setInterval(updateClock, 1000);
