@@ -15,7 +15,7 @@ function calculateAge() {
 
   const isValidDate = (date) => {
     return (
-      Object.prototype.toString.call(date) === ["object Date"] && !isNaN(date)
+      Object.prototype.toString.call(date) === "[object Date]" && !isNaN(date)
     );
   };
 
@@ -37,6 +37,16 @@ function calculateAge() {
 
   const resultContainer = document.getElementById("resultContainer");
   const result = document.getElementById("result");
+
+  result.innerHTML = `
+  <div class="result-item">
+  <h3>Age:</h3>
+  <p>${ageInYears} Years ${ageInMonths % 12} Months ${ageInDays % 30} Days</p>
+  </div>
+  
+  `;
+
+  resultContainer.style.display = "block";
 }
 
 const ageCalculatorForm = document.getElementById("ageCalculator");
